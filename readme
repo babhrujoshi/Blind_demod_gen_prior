@@ -1,0 +1,16 @@
+The code removes distortion synthetically introduced to the MNIST dataset.
+The code supplements the results in the paper "Global Guarantees for Blind Demodulation using Generative Prior" by Paul Hand and Babhru Joshi
+
+-----------------------------------------------------------
+Dependicies: PyTorch and Juypter Notebook
+
+-----------------------------------------------------------
+Folders: 
+- "Data" contains the MNIST dataset
+- "weights" contain the pre-trained weights for the distortion and MINIST (signal) generator. See the paper for the description of the architecture.
+- "Distortion_used" contains the distortion images used in generating the simulation results. See the paper for the how these distortaion was generated.
+
+-----------------------------------------------------------
+Juypter Notebook:
+"Generative_blind_demodulation.ipnb" takes an image from MNIST dataset and and image from the "Distortion_used" folder to produce a modulated image. The code then solves the l2 empirical risk minimization program to recover the MINST image from the modulated image. 
+
